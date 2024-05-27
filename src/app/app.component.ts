@@ -1,10 +1,24 @@
 import { Component } from '@angular/core';
+import { FormControl, FormGroup } from '@angular/forms';
+
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
-export class AppComponent {
+export class AppComponent{
   title = 'demo';
+  frm = new FormGroup({
+    name:new FormControl,
+    email:new FormControl(),
+    num:new FormControl("45")
+})  
+
+submit(){
+  console.log(this.frm.value)
+}
+  
+  
+  
 }

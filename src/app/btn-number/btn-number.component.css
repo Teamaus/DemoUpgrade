@@ -1,0 +1,5 @@
+.btn-number {
+    border: 2px solid black; /* You can adjust the border color, width, and style as needed */
+    padding: 5px; /* Optional: Add padding around the element */
+	display: inline-block;
+}
